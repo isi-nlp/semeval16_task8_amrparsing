@@ -27,7 +27,7 @@ def main():
   infile = reader(args.infile)
   outfile = writer(args.outfile)
 
-  # TODO: commented input, line-separated output
+
   for line in infile:
     outfile.write("# ::snt %s" % line)
     outfile.write("(s / state-01 :ARG0 (p / person :ARG0-of (h / have-org-role-91 :ARG1 (c / country :name (n / name)) :ARG2 president) :name (n2 / name)) :ARG1 (a / and :op1 (w / want-01 :ARG0 (p2 / person) :ARG1 (d / do-02 :ARG0 p2)) :op2 (p3 / person :mod (c2 / country :name (n3 / name)))) :time (d2 / date-entity :year 2007))\n\n")
